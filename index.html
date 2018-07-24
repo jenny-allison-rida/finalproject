@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/static/styles/basicpage.css">
+    <link href="https://fonts.googleapis.com/css?family=Allura|Dancing+Script|Sacramento|Shadows+Into+Light+Two" rel="stylesheet">
+
+  </head>
+
+  <body> <p>
+
+     <p class="welcome">Hello,  {{session.username}}! </p> </center> </p>
+
+     <div id="navbar">
+       <a class="active" href="/homepage">Home</a>
+       <a href="/profile">Favorites</a>
+       <a href="/foodloc">Food Map</a>
+       <a href="/touristicloc">Touristic Destinations Map</a>
+       <a href="/photoloc">Picture Locations Map</a>
+       <a href="/aboutUS">About Us</a>
+       <a href="/workscited">Works Cited</a>
+       <a href="/info">User Info</a>
+       <a href="/logout">Logout</a>
+
+     </div>
+
+  <script>
+  window.onscroll = function() {myFunction()};
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+    <br>
+
+     <p> Greetings and welcome to our wesbite! Our website will basically be your guide to everything Bay Area including touristic
+       destinations, locations to take pictures, and amazing places to eat.</p>
+       <div> We were driven to create this website to shine light on the diversity and different cultures held within this area.
+         We hope to enlighten people and tourists on unity through diversity by informing users on some of our favorite places to
+         visit in the Bay and exposing them to the culture.</div>
+
+
+       <div class="row">
+   				<div class="column">
+
+            <div class ="zoom"> <div class="container">
+            <img src="https://brinkleyglenn.files.wordpress.com/2014/03/img_9278.jpg" width=400 height=400 class="image">
+            <div class="middle"> <form id="logoutBtn" action="/favorite" method="POST">
+               <div class="text">Lemonade 781 Mission St, San Francisco, CA 94103 </div>
+               <input type="text" class="imageInput" value="https://brinkleyglenn.files.wordpress.com/2014/03/img_9278.jpg"  name="imagename">
+               <input type="submit" value="save" class="button">
+              </form>
+              </div>
+           </div> </div>
+
+
+        <div class ="zoom"> <div class="container">
+        <img src="https://s3-media1.fl.yelpcdn.com/bphoto/HQAQ8g9gSx4RH7Wz6UZeHQ/348s.jpg" width=400 height=400 class="image">
+        <div class="middle"> <form id="logoutBtn" action="/favorite" method="POST">
+           <div class="text">O'Honey  3862 Fallon Rd, Dublin, CA 94568 </div>
+           <input type="text" class="imageInput" value="https://s3-media1.fl.yelpcdn.com/bphoto/HQAQ8g9gSx4RH7Wz6UZeHQ/348s.jpg"  name="imagename">
+           <input type="submit" value="save" class="button">
+          </form>
+          </div>
+       </div> </div>
+
+
+       <div class ="zoom"> <div class="container">
+       <img src="https://s3-media1.fl.yelpcdn.com/bphoto/U_zUyJ8wcggxrAGhnVYkVg/ls.jpg" width=400 height=400 class="image">
+       <div class="middle"> <form id="logoutBtn" action="/favorite" method="POST">
+          <div class="text">Gen Korean BBQ: 43476 Boscell Rd M6-B, Fremont, CA 94538 </div>
+          <input type="text" class="imageInput" value="https://s3-media1.fl.yelpcdn.com/bphoto/U_zUyJ8wcggxrAGhnVYkVg/ls.jpg"  name="imagename">
+          <input type="submit" value="save" class="button">
+         </form>
+         </div>
+      </div> </div>
+
+
+    </div class="column">
+
+          <div class="column">
+
+
+          <div class ="zoom"> <div class="container">
+          <img src="https://lishcreative.com/wp-content/uploads/2017/07/MB2B8608.jpg" width=400 height=400 class="image">
+          <div class="middle"> <form id="logoutBtn" action="/favorite" method="POST">
+             <div class="text">Color Factory: 575 Sutter St, San Francisco, CA 94102 </div>
+             <input type="text" class="imageInput" value="https://lishcreative.com/wp-content/uploads/2017/07/MB2B8608.jpg"  name="imagename">
+             <input type="submit" value="save" class="button">
+            </form>
+            </div>
+         </div> </div>
+
+         <div class ="zoom"> <div class="container">
+         <img src="http://previews.123rf.com/images/touchstone/touchstone1007/touchstone100700024/7368361-The-Japanese-Tea-Garden-in-the-Golden-Gate-Park-San-Francisco--Stock-Photo.jpg" width=400 height=400 class="image">
+         <div class="middle"> <form id="logoutBtn" action="/favorite" method="POST">
+            <div class="text">Japanese Tea Garden: 75 Hagiwara Tea Garden Dr, San Francisco, CA CA 94118</div>
+            <input type="text" class="imageInput" value="http://previews.123rf.com/images/touchstone/touchstone1007/touchstone100700024/7368361-The-Japanese-Tea-Garden-in-the-Golden-Gate-Park-San-Francisco--Stock-Photo.jpg"  name="imagename">
+            <input type="submit" value="save" class="button">
+           </form>
+           </div>
+        </div> </div>
+
+
+        <div class ="zoom"> <div class="container">
+        <img src="https://news.theregistrysf.com/wp-content/uploads/2017/11/Union-Square-Day-Shot.jpg" width=400 height=400 class="image">
+        <div class="middle"> <form id="logoutBtn" action="/favorite" method="POST">
+           <div class="text">Union Square: 333 Post St, San Francisco, CA 94108</div>
+           <input type="text" class="imageInput" value="https://news.theregistrysf.com/wp-content/uploads/2017/11/Union-Square-Day-Shot.jpg"  name="imagename">
+           <input type="submit" value="save" class="button">
+          </form>
+          </div>
+       </div> </div>
+
+
+    </div class="column">
+
+          <div class="column">
+
+            <div class ="zoom"> <div class="container">
+            <img src="https://78.media.tumblr.com/8c30dbfc33dc64bafc763d27dead977b/tumblr_otzzjv3lwg1u8rmt8o1_500.jpg" width=400 height=400 class="image">
+            <div class="middle"> <form id="logoutBtn" action="/favorite" method="POST">
+               <div class="text">Golden Gate Bridge: Golden Gate Bridge, San Francisco, CA</div>
+               <input type="text" class="imageInput" value="https://78.media.tumblr.com/8c30dbfc33dc64bafc763d27dead977b/tumblr_otzzjv3lwg1u8rmt8o1_500.jpg"  name="imagename">
+               <input type="submit" value="save" class="button">
+              </form>
+              </div>
+           </div> </div>
+
+           <div class ="zoom"> <div class="container">
+           <img src="https://cafecollector.files.wordpress.com/2015/09/img_4649.jpg" width=400 height=400 class="image">
+           <div class="middle"> <form id="logoutBtn" action="/favorite" method="POST">
+              <div class="text">Boba Guys:1522 Fillmore St, San Francisco, CA 94115</div>
+              <input type="text" class="imageInput" value="https://cafecollector.files.wordpress.com/2015/09/img_4649.jpg"  name="imagename">
+              <input type="submit" value="save" class="button">
+             </form>
+             </div>
+          </div> </div>
+
+          <div class ="zoom"> <div class="container">
+          <img src="https://ssl.c.photoshelter.com/img-get2/I0000Hzcr7fyPBtU/fit=1000x750/Rajs-090826-1861LRDEVSRGB17LSL2-Editsrgb.jpg" width=400 height=400 class="image">
+          <div class="middle"> <form id="logoutBtn" action="/favorite" method="POST">
+             <div class="text">Ocean Beach, San Francisco, CA</div>
+             <input type="text" class="imageInput" value="https://ssl.c.photoshelter.com/img-get2/I0000Hzcr7fyPBtU/fit=1000x750/Rajs-090826-1861LRDEVSRGB17LSL2-Editsrgb.jpg"  name="imagename">
+             <input type="submit" value="save" class="button">
+            </form>
+            </div>
+         </div> </div>
+
+
+    </div class="column">
+
+      </div class="row">
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/styles/basicpage.css">
+</head>
+<body>
+  <div id="navbar">
+    <a class="active" href="/homepage">Home</a>
+    <a href="/profile">Favorites</a>
+    <a href="/foodloc">Food Map</a>
+    <a href="/touristicloc">Touristic Destinations Map</a>
+    <a href="/photoloc">Picture Locations Map</a>
+    <a href="/aboutUS">About Us</a>
+    <a href="/workscited">Works Cited</a>
+    <a href="/info">User Info</a>
+    <a href="/logout">Logout</a>
+
+  </div>
+
+    <script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+    <br>
+      <img src="{{avatar}}" class="circle"> <br>
+      <a href="/changeavi"> change profile picture </a>
+     <p class="normal">
+      Username: @{{session.username}} <br>
+       Password: {{session.password}}
+     </p>
+
+</body>

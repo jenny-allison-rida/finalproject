@@ -1,0 +1,32 @@
+h1 {
+  color:black; font-family:'Allura', cursive; font-size: 30px
+
+}
+
+body {
+
+  color:black; font-family:'Shadows Into Light Two', cursive; font-size:23px
+}
+.column {
+  float: left;
+  width: 30%;
+  padding: 5px;
+}
+
+.circle {
+    height: 150;
+    border-radius: 50%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#logo {
+  float: left;
+  margin:0;
+  padding: 0;
+}

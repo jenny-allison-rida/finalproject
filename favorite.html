@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="/static/styles/basicpage.css">
+</head>
+<body>
+  <div id="navbar">
+    <a class="active" href="/homepage">Home</a>
+    <a href="/profile">Favorites</a>
+    <a href="/foodloc">Food Map</a>
+    <a href="/touristicloc">Touristic Destinations Map</a>
+    <a href="/photoloc">Picture Locations Map</a>
+    <a href="/aboutUS">About Us</a>
+    <a href="/workscited">Works Cited</a>
+    <a href="/info">User Info</a>
+    <a href="/logout">Logout</a>
+  </div>
+
+    <script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    </script>
+    <br>
+    <center>
+    <div class="brownie">
+    <div class="row">
+    {% for i in favorites %}
+
+
+
+      <img src ="{{i}}" width=400 height=400 class="image">
+      <div class="middle">
+         <div class="text"> -- info -- </div>
+        </div>
+
+
+    {% endfor %}
+  </div>
+</div>
+  </center>
+</body>
